@@ -328,42 +328,59 @@
           <ul class="list footer-social-list">
             <li class="footer-social-item">
               <a
-                class="footer-social link"
+                class="footer-social"
                 href=""
                 aria-label="Ссылка на Instagram"
-                ><img src="./img/footer-instagram.svg" alt="Логотип Инстаграм"
-              /></a>
+              >
+                <svg class="footer-social-svg">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+               </li>
+
+               <li class="footer-social-item">
+              <a class="footer-social" href="" aria-label="Ссылка на Twitter"
+                >
+                
+                <svg class="footer-social-svg">
+                  <use href="./img/sprite.svg#icon-Twitter"></use>
+                </svg>
+
+            </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="footer-social link"
-                href=""
-                aria-label="Ссылка на Twitter"
-                ><img src="./img/footer-twitter.svg" alt="Логотип Твиттер"
-              /></a>
+              <a class="footer-social" href="" aria-label="Ссылка на Facebook"
+                >
+                
+                <svg class="footer-social-svg">
+                  <use href="./img/sprite.svg#icon-Facebook"></use>
+                </svg>
+     
+            </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="footer-social link"
-                href=""
-                aria-label="Ссылка на Facebook"
-                ><img src="./img/footer-facebook.svg" alt="Логотип Фейсбук"
-              /></a>
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="footer-social link"
-                href=""
-                aria-label="Ссылка на Facebook"
-                ><img src="./img/footer-linkedin.svg" alt="Логотип Ликнедин"
-              /></a>
+              <a class="footer-social" href="" aria-label="Ссылка на linkedin"
+                >
+                <svg class="footer-social-svg">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+          
+            </a>
             </li>
           </ul>
         </div>
 
+        <!-- формы в подвале футер -->
         <div class="footer-elemet subscribe">
           <h2 class="exclamation">Подпишитесь на рассылку</h2>
-          <!-- поле для ввода и кнопка, пока не трогаем до 3го занятья -->
+          <div class="flex-email">
+            <input class="footer-form-field" type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button type="submit" class="button subscription subscribe-icon">Подписаться
+              <svg width="24" height="24" class="icon-send">
+                <use href="./img/sprite_modal.svg#icon-send"></use>
+                
+              </svg></button></div>
+
         </div>
       </div>
       <div class="about1">
@@ -371,7 +388,7 @@
     
     </div>
   </footer>
-  <script src="./js/modal.js"></script>
-  
+  <!-- <script src="./js/modal.js"></script> -->
+
   </body>
 </html>

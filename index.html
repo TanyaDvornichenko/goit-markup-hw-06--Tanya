@@ -44,7 +44,7 @@
               <svg class="nav-icon" width="16" height="11">
                 <use href="./img/sprite.svg#icon-envelope"></use>
               </svg>
-              <!-- <img src="./img/envelope.svg" alt="envelope icon" /> -->
+
               info@devstudio.com</a
             >
           </li>
@@ -69,9 +69,73 @@
             эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a href="" class="order-button link"> Заказать услугу </a>
+          <a href="" class="button link" data-modal-open> Заказать услугу </a>
         </div>
       </section>
+
+      <!-- Модальное окно -->
+      <!-- после класса backdrop добавляю  is-hidden, и не работает скрипт (-->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+          <button class="close-modal" data-modal-close>
+            <svg width="11" height="11">
+
+              <use href="./img/sprite_modal.svg#icon-close"></use>
+            </svg>
+          
+          </button>
+          <form action="" class="form">
+
+            <div class="form-field">
+              <input type="text" name="name" id="name" placeholder=" " class="form-input" />
+              <label for="name" class="form-label">Имя</label>
+              <svg width="18" height="18" class="icon-form">
+                <use href="./img/sprite_modal.svg#icon-person-black"></use>
+              </svg>
+
+            </div>
+
+            <div class="form-field">
+              <input type="tel" name="tel" id="tel" placeholder=" " class="form-input" />
+              <label for="tel" class="form-label">Телефон</label>
+              <svg width="18" height="18" class="icon-form">
+                <use href="./img/sprite_modal.svg#icon-phone-black"></use>
+              </svg>
+
+            </div>
+
+            <div class="form-field">
+              <input type="email" name="mail" id="mail" placeholder=" " class="form-input" />
+              <label for="mail" class="form-label">Почта</label>
+              <svg width="18" height="18" class="icon-form">
+                <use href="./img/sprite_modal.svg#icon-email-black"></use>
+              </svg>
+
+            </div>
+
+            <div class="form-field ">
+              <textarea class="comment" name="comment" id="comment" rows="8" placeholder="    "
+                class="textarea_comment"></textarea>
+              <label for="comment" class="form-label-comment">Комментарий</label>
+            </div>
+
+            <div class="form-license">
+              <label class="field">
+                <input class="checkbox" type="checkbox" name="license" value="accept" />
+                <span class="icon"></span>
+                <span class="label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+              </label>
+            </div>
+
+            <button type="submit" class="button">Отправить</button>
+          </form>
+
+        </div>
+
+      </div>
+
+
 
       <!-- Секция1 Особенности компании -->
       <section class="features">
@@ -560,46 +624,20 @@
           
             </a>
             </li>
-<!--             
-            <li class="footer-social-item">
-               <a
-                class="footer-social link"
-                href="."
-                aria-label="Ссылка на Instagram"
-                ><img src="./img/footer-instagram.svg" alt="Логотип Инстаграм"
-              /></a>
-            </li>
-            <li class="footer-social-item">
-              <a
-              class="footer-social link"
-              href="."
-                aria-label="Ссылка на Twitter"
-                ><img src="./img/footer-twitter.svg" alt="Логотип Твиттер"
-              /></a>
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="footer-social link"
-                href="."
-                aria-label="Ссылка на Facebook"
-                ><img src="./img/footer-facebook.svg" alt="Логотип Фейсбук"
-              /></a>
-            </li>
-            <li class="footer-social-item">
-              <a
-              class="footer-social link"
-              href="."
-                aria-label="Ссылка на Facebook"
-                ><img src="./img/footer-linkedin.svg" alt="Логотип Ликнедин"
-              /></a>
-            </li> -->
-
           </ul>
         </div>
 
+        <!-- формы в подвале футер -->
         <div class="footer-elemet subscribe">
           <h2 class="exclamation">Подпишитесь на рассылку</h2>
-          <!-- поле для ввода и кнопка, пока не трогаем до 3го занятья -->
+          <div class="flex-email">
+            <input class="footer-form-field" type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button type="submit" class="button subscription subscribe-icon">Подписаться
+              <svg width="24" height="24" class="icon-send">
+                <use href="./img/sprite_modal.svg#icon-send"></use>
+                
+              </svg></button></div>
+
         </div>
       </div>
       <div class="about1">
@@ -607,7 +645,7 @@
     
     </div>
   </footer>
-  <script src="./js/modal.js"></script>
-  
+  <!-- <script src="./js/modal.js"></script> -->
+
   </body>
 </html>
